@@ -3,7 +3,6 @@ title: Getting Started
 preview: bla bla bla bla
 date: 2022-12-14
 cover: electo.jpg
-category: ['gg','ww']
 ---
 
 Thanks for checking out my blog template. It's based on the blog I built for my own [website](https://mattjennings.io) and I hope this is a good starting point for you to start yours.
