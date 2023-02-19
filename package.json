@@ -6,9 +6,7 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./jsconfig.json",
-		"check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
-		"lint": "prettier --check . && eslint --ignore-path .gitignore .",
-		"format": "prettier --write ."
+		"check:watch": "svelte-check --tsconfig ./jsconfig.json --watch"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^1.0.0",
@@ -19,9 +17,6 @@
 		"autoprefixer": "^10.4.7",
 		"cssnano": "^5.0.15",
 		"dayjs": "^1.11.7",
-		"eslint": "^7.32.0",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-plugin-svelte3": "^3.3.0",
 		"firebase": "^9.17.1",
 		"mdsvex": "^0.10.6",
 		"mdsvex-relative-images": "^1.0.3",
