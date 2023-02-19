@@ -7,12 +7,13 @@ export async function load({ params }) {
 
   // get post with metadata
   const post = posts.find((post) => slug === post.slug)
-
+	const more = posts.filter((el) => el.slug !== slug).slice(0, 4)
   if (!post) {
     throw error(404, 'Post not found')
   }
 
   return {
-    post
+    post,
+		more
   }
 }

@@ -1,23 +1,57 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import './prism.css';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@layer base {
-  body {
-    @apply text-zinc-600 dark:text-zinc-400;
-  }
+/* :root {
+  min-height: 100%;
+  overscroll-behavior: none;
+}
+:root::-webkit-scrollbar {
+  width: 10px;
+  @apply bg-stone-600;
+}
+:root::-webkit-scrollbar-thumb {
+  @apply bg-stone-900;
+} */
+html {
+	scrollbar-face-color: #646464;
+	scrollbar-base-color: #646464;
+	scrollbar-3dlight-color: #646464;
+	scrollbar-highlight-color: #646464;
+	scrollbar-track-color: #000;
+	scrollbar-arrow-color: #000;
+	scrollbar-shadow-color: #646464;
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply text-zinc-900 dark:text-zinc-200;
-  }
+::-webkit-scrollbar {
+	width: 8px;
+	height: 3px;
+}
+::-webkit-scrollbar-button {
+	background-color: #666;
+}
+::-webkit-scrollbar-track {
+	background-color: #646464;
+}
+::-webkit-scrollbar-track-piece {
+	background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+	height: 50px;
+	background-color: #666;
+	border-radius: 3px;
+}
+::-webkit-scrollbar-corner {
+	background-color: #646464;
+}
+::-webkit-resizer {
+	background-color: #666;
+}
 
-  hr {
-    @apply border-zinc-100 dark:border-zinc-700/25;
-  }
+.shadowfiend {
+	@apply shadow-small shadow-stone-900 dark:shadow-stone-600 transition-shadow duration-200 hover:shadow-medium hover:shadow-stone-900 dark:hover:shadow-stone-600;
+}
+
+.shadowdemon:hover {
+	text-shadow: 1px 1px 50px;
 }

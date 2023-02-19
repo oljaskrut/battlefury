@@ -1,27 +1,25 @@
 <script>
-  import Card from './Card.svelte'
-  import ArrowRightIcon from './ArrowRightIcon.svelte'
-
   export let post
+  const { title, cover, date, preview, slug } = post
+  import Date from './PostDate.svelte'
+  import Image from './CoverImage.svelte'
 </script>
 
-<Card href={`/post/${post.slug}`} data-sveltekit-prefetch>
-  <slot slot="eyebrow" name="eyebrow" />
-  <slot slot="title">{post.title}</slot>
-  <div slot="description" class="prose dark:prose-invert">
-    {@html post.preview.html}
+<a class="md:px-2 px-12" href={`/post/${slug}`}>
+  <div class="mb-5 flex justify-center p-2">
+    <Image {cover} type="medium" {slug} />
   </div>
-  <div slot="actions">
-    <div class="flex items-center text-teal-500">
-      <span class="text-sm font-medium">Read</span>
-      <ArrowRightIcon class="w-4 h-4 ml-1" />
-    </div>
-  </div>
-</Card>
 
-<style>
-  .prose > :global(p) {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-</style>
+  <h3 class="mb-1 text-xl font-medium leading-tight text-start">
+    <span class="w-24 hover:underline shadowdemon">
+      {title}
+    </span>
+  </h3>
+  <!-- <hr class="border-accent-2" /> -->
+  <p class="text-sm leading-relaxed mb-2">
+    <span class="font-semibold mr-4"><Date {date} /> </span>
+    {preview.text.slice(0, 80)}...
+  </p>
+
+  <!-- <Categories {categories} /> -->
+</a>
