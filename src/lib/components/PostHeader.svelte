@@ -2,7 +2,7 @@
   import CoverImage from './CoverImage.svelte'
   import Date from './PostDate.svelte'
   export let post
-  const { date, title, cover, slug } = post
+  const { date, title, cover } = post
 </script>
 
 <h1
@@ -13,7 +13,7 @@
 
 <div class="mb-8 sm:mx-0 md:mb-16">
   <div class="sm:mx-0">
-    <CoverImage {cover} {slug} />
+    <CoverImage {cover} />
   </div>
 </div>
 <div class="mx-auto max-w-2xl">

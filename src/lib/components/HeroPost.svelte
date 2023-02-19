@@ -8,7 +8,7 @@
 
 <a href={`/post/${slug}`}>
   <div class="mb-8 md:mb-16">
-    <CoverImage {cover} {slug} type="large" />
+    <CoverImage {cover} type="large" />
   </div>
   <div class="mb-8 md:mb-16 md:grid md:grid-cols-2 gap-x-16">
     <div>

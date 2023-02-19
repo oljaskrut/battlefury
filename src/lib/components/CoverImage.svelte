@@ -1,7 +1,8 @@
 <script>
   export let cover
-  export let slug
+  // export let slug
   export let type
+  // `./../../posts/${slug}/${cover}`
 </script>
 
 <div class="sm:mx-0">
@@ -10,13 +11,13 @@
       <img
         class="aspect-video rounded-xl  object-cover shadowfiend"
         alt=""
-        src={`../../../posts/${slug}/${cover}`}
+        src={'/covers/' + cover}
       />
     {:else}
       <img
         class="aspect-video object-cover rounded-xl shadowfiend"
         alt=""
-        src={`../../../posts/${slug}/${cover}`}
+        src={'/covers/' + cover}
       />
     {/if}
   {:else}

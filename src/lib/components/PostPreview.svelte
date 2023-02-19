@@ -7,7 +7,7 @@
 
 <a class="md:px-2 px-12" href={`/post/${slug}`}>
   <div class="mb-5 flex justify-center p-2">
-    <Image {cover} type="medium" {slug} />
+    <Image {cover} type="medium" />
   </div>
 
   <h3 class="mb-1 text-xl font-medium leading-tight text-start">
