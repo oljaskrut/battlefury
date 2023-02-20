@@ -6,9 +6,11 @@
   let level = 1
   $: level = $page.route.id === "/" ? 1 : 2
   import { logEvent } from "firebase/analytics"
-  import { analytics } from "$lib/firebase.js"
-  import { browser } from "$app/environment"
-  if (browser) logEvent(analytics, "puck in")
+  import { onMount } from "svelte"
+  onMount(async () => {
+    const analytics = await import("$lib/firebase.js")
+    logEvent(analytics, "puck in")
+  })
 </script>
 
 <BlogHeader {level} />
