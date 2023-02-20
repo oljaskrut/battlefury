@@ -1,10 +1,13 @@
 <script>
-  import '../app.css'
-  import BlogHeader from '$lib/components/BlogHeader.svelte'
-  import Footer from '$lib/components/Footer.svelte'
-  import { page } from '$app/stores'
+  import "../app.css"
+  import BlogHeader from "$lib/components/BlogHeader.svelte"
+  import Footer from "$lib/components/Footer.svelte"
+  import { page } from "$app/stores"
   let level = 1
-  $: level = $page.route.id === '/' ? 1 : 2
+  $: level = $page.route.id === "/" ? 1 : 2
+  import { logEvent } from "firebase/analytics"
+  import { analytics } from "$lib/firebase.js"
+  logEvent(analytics, "puck in")
 </script>
 
 <BlogHeader {level} />

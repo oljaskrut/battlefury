@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics,logEvent } from "firebase/analytics";
+import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAXSYX8T4iNNjRI_I-9ryD3nyYeIPCJ17w",
@@ -13,4 +13,3 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const analytics = getAnalytics(app);
-logEvent(analytics, 'puck in');
