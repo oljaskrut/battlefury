@@ -7,7 +7,8 @@
   $: level = $page.route.id === "/" ? 1 : 2
   import { logEvent } from "firebase/analytics"
   import { analytics } from "$lib/firebase.js"
-  logEvent(analytics, "puck in")
+  import { browser } from "$app/environment"
+  if (browser) logEvent(analytics, "puck in")
 </script>
 
 <BlogHeader {level} />
