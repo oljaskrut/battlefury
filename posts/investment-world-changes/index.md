@@ -20,3 +20,5 @@ Promote Economic Inclusion and Gender Equality through Private Sector Engagement
 There are lots of activities planned to be done which will result in the achievement of these main priorities. 
 
 Moreover, On 30 December of 2022, the headquarters of Eurasian Development Bank (EDB) approved the redistribution of the authorized capital from the Russian Federation sector in benefit of other Eurasian countries. Most of the authorized capital will be distributed into Kazakhstan's economy. As a result, the share of Russia will be decreased from 65,98% to 44,79%, while the authorized capital shares of EDB will consist of: Republic of Kazakhstan - 37,29%, Republic of Armenia - 4,23%, Republic of Kyrgyzstan - 4,23%, Republic of Belarus - 5,21%, Republic of Tajikistan - 4,26%. The EDB is the international financial organization which does the investments in the Eurasian countries. The changes in the benefit of Kazakhstan means the future increase in development of Infrastructure, Digitalization, Green energy, Agriculture and other sectors of the economy.  
+
+Author: Ramazan Amangeldiyev

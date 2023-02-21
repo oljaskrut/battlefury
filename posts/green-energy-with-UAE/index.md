@@ -15,3 +15,5 @@ The visit of Qasym-Jomart Tokayed and warm hospitality of Mohamed bin Zayed Al N
 For now, those are the whole details of the renewable energy development agreements between these countries. At the end of the visit, the President of Kazakhstan Qasym-Jomart Tokayev invited Mohamedd bin Zayed Al Nahyan to Kazakhstan for further development of relationships.
 
 Overall, Kazakhstan and the UAE are constantly developing strong economic and diplomatic relationships, with the UAE making significant investments in Kazakhstan, particularly in the energy sector, and the two countries working together on green energy initiatives.
+
+Author: Ramazan Amangeldiyev

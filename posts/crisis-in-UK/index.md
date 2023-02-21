@@ -14,3 +14,5 @@ The shortage of skilled workers has led to delays in construction projects, high
 To address this problem, the UK government has launched several initiatives to attract more workers from outside the EU, such as increasing the number of Tier 2 visas available to skilled workers, and investing in training and apprenticeship programs to increase the number of domestic workers with the necessary skills. However, the impact of these measures is yet to be seen.
 
 The impact of the problem also occurred on prices for such types of works. 
+
+Author: Ramazan Amangeldiyev

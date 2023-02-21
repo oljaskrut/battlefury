@@ -13,3 +13,5 @@ Due to the fact that Kazakhstan is a landlocked country, the distribution and en
 There is an option of rebuilding the supply chain via China, but the Nuclear Intelligence Weekly says that it is quite complicated due to the trade tensions. 
 
 For now, the United States and other European countries are looking for other suppliers of enriched uranium.  
+
+Author: Ramazan Amangeldiyev
