@@ -2,8 +2,8 @@
 // It's helpful for SEO but does require you to keep it updated to reflect the routes of your website.
 // It is OK to delete this file if you'd rather not bother with it.
 
-import { posts } from '$lib/data/posts'
-import { website } from '$lib/info'
+import { posts } from "$lib/data/posts"
+import { website } from "$lib/info"
 
 export const prerender = true
 
@@ -15,8 +15,8 @@ const getPostUrl = (slug) => `${website}/post/${slug}`
  */
 export async function GET({ setHeaders }) {
   setHeaders({
-    'Cache-Control': `max-age=0, s-max-age=600`,
-    'Content-Type': 'application/xml'
+    "Cache-Control": `max-age=0, s-max-age=600`,
+    "Content-Type": "application/xml",
   })
 
   const xml = `<?xml version="1.0" encoding="UTF-8" ?>
@@ -41,17 +41,13 @@ export async function GET({ setHeaders }) {
           (post) => `<url>
             <loc>${getPostUrl(post.slug)}</loc>
             <lastmod
-              >${
-                post.updated
-                  ? new Date(post.updated).toISOString()
-                  : new Date(post.date).toISOString()
-              }</lastmod
+              >${new Date(post.date).toISOString()}</lastmod
             >
             <changefreq>monthly</changefreq>
             <priority>1.0</priority>
-          </url>`
+          </url>`,
         )
-        .join('')}
+        .join("")}
     </urlset>`
 
   return new Response(xml)
