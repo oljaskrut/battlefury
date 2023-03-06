@@ -1,6 +1,6 @@
 ---
 title: Новый Казахстан| последний этап перезагрузки страны
-preview: 
+preview: Где же Новый Казахстан?
 date: 2023-03-06
 cover: parliament-kazakhstan.jpg
 ---
