@@ -13,6 +13,8 @@ export const posts = Object.entries(import.meta.glob("/posts/**/*.md", { eager: 
     const html = parse(post.default.render().html)
     const preview = post.metadata.preview ? parse(post.metadata.preview) : html.querySelector("p")
 
+    console.log(post.metadata.date)
+
     return {
       ...post.metadata,
 
@@ -33,7 +35,7 @@ export const posts = Object.entries(import.meta.glob("/posts/**/*.md", { eager: 
             addTimezoneOffset(new Date(post.metadata.date)),
             "yyyy-MM-dd",
           )
-        : undefined,
+        : "2023-03-11",
 
       preview: {
         html: preview.toString(),

@@ -5,6 +5,10 @@
 import { posts } from "$lib/data/posts"
 import { website } from "$lib/info"
 
+posts.forEach((post) => {
+  console.log(post.slug, post.date)
+})
+
 export const prerender = true
 
 // make sure this matches your post route
