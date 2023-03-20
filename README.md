@@ -1,2 +1,3 @@
-# Qalamger
-SvelteKit Blog 
+# 	[Qalamger](https://qalamger.com)
+
+SvelteKit SSG Markdown Blog
