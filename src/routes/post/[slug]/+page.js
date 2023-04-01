@@ -5,7 +5,7 @@
  * @type {import('@sveltejs/kit').PageLoad}
  */
 export async function load({ data }) {
-	const {post,more} = data
+  const { post, more } = data
   // load the markdown file based on slug
   const component = data.post.isIndexFile
     ? // vite requires relative paths and explicit file extensions for dynamic imports
@@ -15,7 +15,7 @@ export async function load({ data }) {
 
   return {
     post,
-		more,
+    more,
     component: component.default,
   }
 }
